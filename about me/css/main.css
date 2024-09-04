@@ -1,0 +1,383 @@
+body {
+    flex-direction: column;
+    align-items: center;
+    display: flex;  
+    background: linear-gradient(to right, #cfdaec,  #eef0f6);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+}
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.hello {
+    color: #759cd8;
+    font-size: 72px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    display: inline-block;
+}
+.hello span {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.my_image {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-top: 100px;
+    animation: transform 2.5s forwards;
+}
+@keyframes transform {
+    from {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.stick {
+    position: relative;
+    width: 300px;
+    height: 6px;
+    background-color: #9cb9d1;
+    margin: 0;
+    border-radius: 5px;
+    margin-top: 50px;
+    animation: grow 2s forwards;
+}
+@keyframes grow {
+    from {
+        width: 0;
+    }
+    to {
+        width: 300px;
+    }
+}
+.front {
+    color: #9cb9d1;
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: transform1 3s forwards;
+}
+@keyframes transform1 {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+}
+.stick2 {
+    position: absolute;
+    top: 10px;
+    left: 500px;
+    width: 6px;
+    background-color: #9cb9d1;
+    margin: 0;
+    border-radius: 5px;
+    animation: grow2 3s forwards;
+    animation-delay: 1.5s;
+}
+@keyframes grow2 {
+    from {
+        height: 0;
+    }
+    to {
+        height: 939px;
+    }
+}
+.aboutme {
+    color: #759cd8;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute; /* Изменено на absolute */
+    top: 10px;
+    left: 130px;
+    animation: transform2 2s forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+@keyframes transform2 {
+    from {
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.mynameis {
+    color: #759cd8;
+    font-size: 34px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    overflow: hidden;
+    width: 400px;
+    height: 800px;
+    animation: transform2 3s forwards;
+    animation-delay: 3.5s;
+    opacity: 0;
+}
+.stick3 {
+    position: absolute;
+    top: 10px;
+    right: 500px;
+    width: 6px;
+    background-color: #9cb9d1;
+    margin: 0;
+    border-radius: 5px;
+    animation: grow2 3s forwards;
+    animation-delay: 4.5s;
+}
+.myskills {
+    color: #759cd8;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute; /* Изменено на absolute */
+    top: 10px;
+    right: 130px;
+    animation: transform2 2s forwards;
+    animation-delay: 4.5s;
+    opacity: 0;
+}
+
+.html {
+    opacity: 0;
+    position: absolute;
+    right: 380px;
+    top: 150px;
+    width: 90px;
+    float: right;
+    height: 90px;
+    border-radius: 5px;
+    animation: stacks 3.5s forwards;
+    animation-delay: 5.5s;
+}
+.css {
+    opacity: 0;
+    position: absolute;
+    right: 380px;
+    top: 250px;
+    width: 90px;
+    float: right;
+    height: 90px;
+    border-radius: 5px;
+    animation: stacks 3.5s forwards;
+    animation-delay: 6.5s;
+}
+.js {
+    opacity: 0;
+    border-radius: 5px;
+    object-fit: cover;
+    position: absolute;
+    right: 380px;
+    top: 350px;
+    width: 90px;
+    float: right;
+    height: 90px;
+    border-radius: 5px;
+    animation: stacks 3.5s forwards;
+    animation-delay: 7.5s;
+}
+@keyframes stacks {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.progress-bar-container {
+    opacity: 0;
+    position: absolute;
+    right: 27px;
+    top: 140px;
+    width: 18%;
+    background-color: #f3f3f3;
+    border-radius: 25px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 50px auto;
+    height: 12px;
+    animation: stacks 5.5s forwards;
+    animation-delay: 5.5s;
+  }
+
+  .progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #759cd8;
+    border-radius: 25px;
+    animation: load 4s ease-in-out forwards;
+    animation-delay: 5.5s;
+  }
+
+  @keyframes load {
+    from { width: 0%; }
+    to { width: 97.5%; }
+  }
+  .progress-bar-container1 {
+    opacity: 0;
+    position: absolute;
+    right: 27px;
+    top: 240px;
+    width: 18%;
+    background-color: #f3f3f3;
+    border-radius: 25px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 50px auto;
+    height: 12px;
+    animation: stacks 6.5s forwards;
+    animation-delay: 6.5s;
+  }
+  .progress-bar1 {
+    height: 100%;
+    width: 0;
+    background-color: #759cd8;
+    border-radius: 25px;
+    animation: load1 4s ease-in-out forwards;
+    animation-delay: 6.5s;
+  }
+  @keyframes load1 {
+    from { width: 0%; }
+    to { width: 94%; }
+  }
+  .progress-bar-container2 {
+    opacity: 0;
+    position: absolute;
+    right: 27px;
+    top: 340px;
+    width: 18%;
+    background-color: #f3f3f3;
+    border-radius: 25px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 50px auto;
+    height: 12px;
+    animation: stacks 7.5s forwards;
+    animation-delay: 7.5s;
+  }
+  .progress-bar2 {
+    height: 100%;
+    width: 0;
+    background-color: #759cd8;
+    border-radius: 25px;
+    animation: load2 4s ease-in-out forwards;
+    animation-delay: 7.5s;
+  }
+  @keyframes load2 {
+    from { width: 0%; }
+    to { width: 80%; }
+  }
+  .image-container .htmltext {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #cfdaec;
+    color: #759cd8;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    width: 90%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .image-container:hover .htmltext {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Дополнительный стиль для текста (опционально) */
+  .image-container:hover img {
+    opacity: 0.7;
+  }
+  .image-container1 .csstext {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #cfdaec;
+    color: #759cd8;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    width: 90%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .image-container1:hover .csstext {
+    opacity: 1;
+    visibility: visible;
+  }
+  .image-container1:hover img {
+    opacity: 0.7;
+  }
+  .image-container2 .jstext {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #cfdaec;
+    color: #759cd8;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    width: 90%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .image-container2:hover .jstext {
+    opacity: 1;
+    visibility: visible;
+  }
+  .image-container2:hover img {
+    opacity: 0.7;
+  }
+  .pointme {
+    color: #759cd8;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute; /* Изменено на absolute */
+    top: 450px;
+    right: 330px;
+    animation: stacks 2s forwards;
+    animation-delay: 8.5s;
+    opacity: 0;
+}
+
+@media (min-width: 1200px){
+
+}
